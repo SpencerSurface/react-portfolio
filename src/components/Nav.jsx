@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom"
 import Navbar from "./Navbar"
 
-function Nav() {
+function Nav({ currentPage, handlePageChange }) {
     return (
         <Navbar links={[
-            <Link key={1} to="/about">
+            <Link className={`nav-link${currentPage === "About" ? " active" : ""}`} onClick={() => handlePageChange("About")} key={1} to="/about">
                 About Me
             </Link>,
-            <Link key={2} to="/portfolio">
+            <Link className={`nav-link${currentPage === "Portfolio" ? " active" : ""}`} onClick={() => handlePageChange("Portfolio")} key={2} to="/portfolio">
                 Portfolio
             </Link>,
-            <Link key={3} to="/contact">
+            <Link className={`nav-link${currentPage === "Contact" ? " active" : ""}`} onClick={() => handlePageChange("Contact")} key={3} to="/contact">
                 Contact
             </Link>,
-            <Link key={4} to="/resume">
+            <Link className={`nav-link${currentPage === "Resume" ? " active" : ""}`} onClick={() => handlePageChange("Resume")} key={4} to="/resume">
                 Resume
             </Link>
         ]}/>
