@@ -3,7 +3,7 @@ import resume from "../assets/resume.pdf"
 export default function ResumePage() {
     return (
         <>
-            <h3>Resume</h3>
+            <h2>Resume</h2>
             <p>Download <a href={resume} download="spencer-surface-resume.pdf">my resume</a></p>
             <h3>Front-end Proficiencies</h3>
             <ul>

@@ -9,6 +9,7 @@ import weatherDashboard from "../assets/weather-dashboard.png"
 export default function PortfolioPage() {
     return (
         <>
+            <h2>Portfolio</h2>
             <Project 
                 imgSrc={lockedIn}
                 imgAlt="Screenshot of the Locked In betting site"
