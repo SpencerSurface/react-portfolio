@@ -4,16 +4,18 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
     return (
-        <footer>
-            <a href="https://www.linkedin.com/in/spencersurface/">
-                <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="https://github.com/SpencerSurface">
-                <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="mailto:spencer.surface@gmail.com">
-                <FontAwesomeIcon icon={faEnvelope} />
-            </a>
+        <footer className="row">
+            <div className="col d-flex flex-row justify-content-center">
+                <a href="https://www.linkedin.com/in/spencersurface/">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a href="https://github.com/SpencerSurface">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="mailto:spencer.surface@gmail.com">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                </a>
+            </div>
         </footer>
     );
 }

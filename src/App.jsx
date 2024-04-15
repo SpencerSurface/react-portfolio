@@ -23,7 +23,7 @@ function App() {
     return (
         <>
             <Header currentPage={currentPage} />
-            <main>
+            <main className="row">
                 <Outlet />
             </main>
             <Footer />
