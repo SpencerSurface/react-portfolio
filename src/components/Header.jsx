@@ -1,10 +1,10 @@
 import Nav from "./Nav"
 
-function Header({ currentPage, handlePageChange }) {
+function Header({ currentPage }) {
     return (
         <header>
             <h1>Spencer Surface</h1>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Nav currentPage={currentPage} />
         </header>
     );
 }
