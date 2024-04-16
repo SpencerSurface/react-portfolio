@@ -2,7 +2,7 @@
     /* Theme color variables */
     --teal: #16697A;
     --blue: #489FB5;
-    --light-blue: #82C0CC;
+    --light-blue: #A9D3DB;
     --beige: #EDE7E3;
     --orange: #FFA62B;
     --light-orange: #FFC370;
@@ -11,24 +11,36 @@
     font-size: 120%;
 }
 
+/* General stylings */
 body {
     /* Set background color */
     background-color: var(--teal);
+    color: var(--beige);
 }
 
+h1 {
+    /* Largest heading is teal */
+    color: var(--teal);
+    /* Remove margin */
+    margin: 0;
+}
+
+h2, h3, h4 {
+    /* Ohter headings are orange */
+    color: var(--orange);
+}
+
+a {
+    color: var(--light-blue);
+}
+
+/* Header stylings */
 header {
     /* Set the header background color and image */
     background-color: var(--beige);
     background-image: url(./assets/background.svg);
     /* Make the navbar text larger */
     font-size: 130%;
-}
-
-h1 {
-    /* Teal heading */
-    color: var(--teal);
-    /* Remove margin */
-    margin: 0;
 }
 
 header > nav.navbar {
@@ -55,7 +67,27 @@ ul.navbar-nav > li.nav-item > a.nav-link.active {
 
 a.nav-link.active {
     /* Color the background of the active nav link */
-    border: var(--teal) solid 2px;
     border-radius: 20px;
     background-color: var(--teal);
+}
+
+/* About page stylings */
+.headshot {
+    /* Set image size */
+    width: 18em;
+}
+
+/* Contact page stylings */
+button.btn.btn-primary {
+    /* Change the button color */
+    color: var(--teal);
+    background-color: var(--light-orange);
+    border-color: var(--light-orange);
+}
+
+button.btn.btn-primary:active {
+    /* Change the active button color */
+    color: var(--teal);
+    background-color: var(--orange);
+    border-color: var(--orange);
 }

@@ -23,7 +23,7 @@ function App() {
     return (
         <>
             <Header currentPage={currentPage} />
-            <main className="container">
+            <main className="container mt-3">
                 <Outlet />
             </main>
             <Footer />
