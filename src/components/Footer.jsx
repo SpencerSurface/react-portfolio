@@ -1,7 +1,9 @@
+// Import statements for the LinkedIn, GitHub, and email icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
+// The footer
 function Footer() {
     return (
         <footer className="p-3">

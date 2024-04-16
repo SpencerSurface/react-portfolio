@@ -6,6 +6,8 @@ import techBlog from "../assets/tech-blog.png"
 import hiraganaQuiz from "../assets/hiragana-quiz.png"
 import weatherDashboard from "../assets/weather-dashboard.png"
 
+// The Portfolio page
+// Renders each project using the <Project /> component
 export default function PortfolioPage() {
     return (
         <>

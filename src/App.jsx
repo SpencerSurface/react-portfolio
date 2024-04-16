@@ -3,7 +3,6 @@ import { Outlet, useLocation } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { pathToPage } from "./utils/helpers"
-import "./App.css"
 
 function App() {
     // Get the path to determine the initial page

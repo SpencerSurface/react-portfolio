@@ -1,5 +1,6 @@
 import headshot from "../assets/headshot.png"
 
+// The About page
 export default function AboutPage() {
     return (
         <>

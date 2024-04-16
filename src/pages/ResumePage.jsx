@@ -1,5 +1,6 @@
 import resume from "../assets/resume.pdf"
 
+// The Resume page
 export default function ResumePage() {
     return (
         <>

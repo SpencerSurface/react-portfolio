@@ -1,3 +1,5 @@
+// Component for the nav. Contains most of the HTML so the nav component can look cleaner.
+// links is an array of the link components that the nav items are meant to be linked by 
 export default function Navbar({ links }) {
     return (
         <nav className="navbar navbar-expand">

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { validateEmail } from "../utils/helpers"
 
+// The Contact page
 export default function ContactPage() {
     // Set state
     const [name, setName] = useState("");
