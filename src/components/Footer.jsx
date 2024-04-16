@@ -4,15 +4,15 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
     return (
-        <footer>
+        <footer className="p-3">
             <div className="col d-flex flex-row justify-content-center">
-                <a className="icon" href="https://www.linkedin.com/in/spencersurface/">
+                <a className="icon mx-4" href="https://www.linkedin.com/in/spencersurface/">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a className="icon" href="https://github.com/SpencerSurface">
+                <a className="icon mx-4" href="https://github.com/SpencerSurface">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a className="icon" href="mailto:spencer.surface@gmail.com">
+                <a className="icon mx-4" href="mailto:spencer.surface@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </div>
