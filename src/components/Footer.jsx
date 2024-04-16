@@ -6,13 +6,13 @@ function Footer() {
     return (
         <footer>
             <div className="col d-flex flex-row justify-content-center">
-                <a href="https://www.linkedin.com/in/spencersurface/">
+                <a className="icon" href="https://www.linkedin.com/in/spencersurface/">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="https://github.com/SpencerSurface">
+                <a className="icon" href="https://github.com/SpencerSurface">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href="mailto:spencer.surface@gmail.com">
+                <a className="icon" href="mailto:spencer.surface@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </div>

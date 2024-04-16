@@ -77,6 +77,47 @@ a.nav-link.active {
     width: 18em;
 }
 
+/* Portfolio page stylings */
+.project,
+.project h3 {
+    /* Increase the text size of the image overlay */
+    font-size: 150%;
+}
+
+.project .icon {
+    /* Increase the size of the GitHub icon */
+    font-size: 130%;
+}
+
+.project > .card {
+    /* Get rid of the card borders */
+    border-width: 0;
+}
+
+.project > .card > .card-img-overlay {
+    /* Hide image overlay initially */
+    display: none;
+}
+
+.project > .card:hover > img {
+    /* Blur image while hovering over card */
+    filter: blur(5px) opacity(15%);
+}
+
+.project > .card:hover > .card-img-overlay {
+    /* Show overlay while hovering over card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.project a,
+.project p {
+    /* Make color easier to read */
+    color: var(--teal);
+}
+
 /* Contact page stylings */
 button.btn.btn-primary {
     /* Change the button color */
