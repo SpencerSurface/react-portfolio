@@ -1,0 +1,61 @@
+:root {
+    /* Theme color variables */
+    --teal: #16697A;
+    --blue: #489FB5;
+    --light-blue: #82C0CC;
+    --beige: #EDE7E3;
+    --orange: #FFA62B;
+    --light-orange: #FFC370;
+
+    /* Make all text larger */
+    font-size: 120%;
+}
+
+body {
+    /* Set background color */
+    background-color: var(--teal);
+}
+
+header {
+    /* Set the header background color and image */
+    background-color: var(--beige);
+    background-image: url(./assets/background.svg);
+    /* Make the navbar text larger */
+    font-size: 130%;
+}
+
+h1 {
+    /* Teal heading */
+    color: var(--teal);
+    /* Remove margin */
+    margin: 0;
+}
+
+header > nav.navbar {
+    /* Make navbar background transparent */
+    background-color: transparent;
+}
+
+a.nav-link {
+    /* Make nav links teal */
+    color: var(--teal);
+    /* Remove padding */
+    padding: 2%;
+}
+
+a.nav-link:hover {
+    /* Make nav links blue when hovered */
+    color: var(--blue);
+}
+
+ul.navbar-nav > li.nav-item > a.nav-link.active {
+    /* Make the active nav link white */
+    color: white;
+}
+
+a.nav-link.active {
+    /* Color the background of the active nav link */
+    border: var(--teal) solid 2px;
+    border-radius: 20px;
+    background-color: var(--teal);
+}
