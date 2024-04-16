@@ -1,6 +1,6 @@
 export default function Navbar({ links }) {
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand">
             <div className="container-fluid">
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">

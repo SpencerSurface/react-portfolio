@@ -40,12 +40,17 @@ header {
     background-color: var(--beige);
     background-image: url(./assets/background.svg);
     /* Make the navbar text larger */
-    font-size: 130%;
+    font-size: 110%;
 }
 
 header > nav.navbar {
     /* Make navbar background transparent */
     background-color: transparent;
+}
+
+header > nav.navbar > div {
+    /* Remove padding */
+    padding: 0;
 }
 
 a.nav-link {
@@ -75,18 +80,21 @@ a.nav-link.active {
 .headshot {
     /* Set image size */
     width: 18em;
+    /* Center the image on small screens */
+    margin: auto;
+    display: block;
 }
 
 /* Portfolio page stylings */
 .project,
 .project h3 {
     /* Increase the text size of the image overlay */
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .project .icon {
     /* Increase the size of the GitHub icon */
-    font-size: 130%;
+    font-size: 110%;
 }
 
 .project > .card {
@@ -142,4 +150,75 @@ footer .icon {
 footer .icon:hover {
     /* Change the icon color when hovered */
     color: var(--beige);    
+}
+
+/* Responsive stylings */
+/* Small */
+@media (min-width: 576px) {
+    /* Portfolio page stylings */
+    .project,
+    .project h3 {
+        /* Increase the text size of the image overlay */
+        font-size: 140%;
+    }
+
+    .project .icon {
+        /* Increase the size of the GitHub icon */
+        font-size: 130%;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    /* Header stylings */
+    header {
+        /* Increase navbar text size */
+        font-size: 130%;
+    }
+
+    /* About page stylings */
+    .headshot {
+        /* Un-center the image */
+        margin: 0;
+        display: inline;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    /* Header stylings */
+    header {
+        /* Spread out navbar from main heading */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Portfolio page stylings */
+    .project,
+    .project h3 {
+        /* Increase the text size of the image overlay */
+        font-size: 130%;
+    }
+
+    .project .icon {
+        /* Increase the size of the GitHub icon */
+        font-size: 120%;
+    }
+}
+
+/* XL */
+@media (min-width: 1200px) {
+    /* Portfolio page stylings */
+    .project,
+    .project h3 {
+        /* Increase the text size of the image overlay */
+        font-size: 140%;
+    }
+
+    .project .icon {
+        /* Increase the size of the GitHub icon */
+        font-size: 130%;
+    }
 }

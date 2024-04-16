@@ -3,7 +3,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Project({ imgSrc, imgAlt, title, repoLink, deployedLink, tech }) {
     return (
-        <div className="project col-6">
+        <div className="project col-lg-6">
             <div className="card mb-4">
                 <img className="card-img" src={imgSrc} alt={imgAlt}></img>
                 <div className="card-img-overlay">  
